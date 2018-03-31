@@ -23,6 +23,9 @@
 		1DD73FB9206F951A00F1AAD4 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD73FB7206F951A00F1AAD4 /* Nimble.framework */; };
 		1DD73FBC206F953800F1AAD4 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD73FBA206F953800F1AAD4 /* Nimble.framework */; };
 		1DD73FBD206F953800F1AAD4 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD73FBB206F953800F1AAD4 /* Quick.framework */; };
+		1DD73FC1206FED1100F1AAD4 /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD73FC0206FED1100F1AAD4 /* WatchKit.framework */; };
+		1DD73FC3206FED2600F1AAD4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD73FC2206FED2600F1AAD4 /* UIKit.framework */; };
+		1DD73FC5206FED3D00F1AAD4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD73FC4206FED3D00F1AAD4 /* UIKit.framework */; };
 		931AD07E9E2E6664BC20D1C8 /* ScaleSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931ADBFED1348E7F7A60B55F /* ScaleSource.swift */; };
 		931AD084DFCFF34B0A5DF8EF /* CGRect+Rounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AD784CF5FA5B1EEA220F6 /* CGRect+Rounding.swift */; };
 		931AD19D9CAFE00F611F2C6C /* ScaleSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AD390DD83A388D90BAD5F /* ScaleSource.swift */; };
@@ -117,6 +120,9 @@
 		1DD73FB7206F951A00F1AAD4 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/tvOS/Nimble.framework; sourceTree = "<group>"; };
 		1DD73FBA206F953800F1AAD4 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
 		1DD73FBB206F953800F1AAD4 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = "<group>"; };
+		1DD73FC0206FED1100F1AAD4 /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.3.sdk/System/Library/Frameworks/WatchKit.framework; sourceTree = DEVELOPER_DIR; };
+		1DD73FC2206FED2600F1AAD4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1DD73FC4206FED3D00F1AAD4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		931AD04AE3190B0B3D68BA85 /* NSScreen+ScaleProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSScreen+ScaleProvider.swift"; sourceTree = "<group>"; };
 		931AD38B163CE5C219B0972E /* ScreenRounding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenRounding.swift; sourceTree = "<group>"; };
 		931AD390DD83A388D90BAD5F /* ScaleSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleSource.swift; sourceTree = "<group>"; };
@@ -163,6 +169,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DD73FC1206FED1100F1AAD4 /* WatchKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +177,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DD73FC5206FED3D00F1AAD4 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +205,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DD73FC3206FED2600F1AAD4 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +223,9 @@
 		1DB1E634206D3EED00A2A425 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1DD73FC2206FED2600F1AAD4 /* UIKit.framework */,
+				1DD73FC4206FED3D00F1AAD4 /* UIKit.framework */,
+				1DD73FC0206FED1100F1AAD4 /* WatchKit.framework */,
 				1DD73FB7206F951A00F1AAD4 /* Nimble.framework */,
 				1DD73FB6206F951900F1AAD4 /* Quick.framework */,
 				1DD73FBA206F953800F1AAD4 /* Nimble.framework */,
