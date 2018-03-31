@@ -26,9 +26,29 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      codeCoverageEnabled = "YES"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1DD73F87206F8B9800F1AAD4"
+               BuildableName = "UIRounding_tvOSTests.xctest"
+               BlueprintName = "UIRounding_tvOSTests"
+               ReferencedContainer = "container:UIRounding.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "1DBD7CFD206C0C2500D09DD2"
+            BuildableName = "UIRounding.framework"
+            BlueprintName = "UIRounding_tvOS"
+            ReferencedContainer = "container:UIRounding.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>

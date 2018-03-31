@@ -1,0 +1,15 @@
+os: osx
+language: swift
+osx_image: xcode9.2
+xcode_project: UIRounding.xcodeproj
+xcode_sdk: iphonesimulator11.2
+xcode_scheme:
+  - UIRounding_iOS
+  - UIRounding_macOS
+  - UIRounding_watchOS
+  - UIRounding_tvOS
+before_install:
+  - brew update
+  - brew outdated carthage || brew upgrade carthage
+before_script:
+  - carthage bootstrap
