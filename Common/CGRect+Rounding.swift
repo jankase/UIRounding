@@ -3,7 +3,7 @@
 // Copyright (c) 2018 Jan Kaše. All rights reserved.
 //
 
-import UIKit
+import Foundation
 import CoreGraphics
 
 extension ScreenRounding {
@@ -31,28 +31,28 @@ extension ScreenRounding {
 
 extension CGRect {
 
-  public func rounded(screen aScreen: UIScreen = .main) -> CGRect {
-    return ScreenRounding(screen: aScreen).round(rect: self)
+  public func rounded(scaleProvider aScaleProvider: ScaleProviderType = ScaleSource.default) -> CGRect {
+    return ScreenRounding(scaleProvider: aScaleProvider).round(rect: self)
   }
 
-  public func celled(screen aScreen: UIScreen = .main) -> CGRect {
-    return ScreenRounding(screen: aScreen).ceil(rect: self)
+  public func celled(scaleProvider aScaleProvider: ScaleProviderType = ScaleSource.default) -> CGRect {
+    return ScreenRounding(scaleProvider: aScaleProvider).ceil(rect: self)
   }
 
-  public func floored(screen aScreen: UIScreen = .main) -> CGRect {
-    return ScreenRounding(screen: aScreen).floor(rect: self)
+  public func floored(scaleProvider aScaleProvider: ScaleProviderType = ScaleSource.default) -> CGRect {
+    return ScreenRounding(scaleProvider: aScaleProvider).floor(rect: self)
   }
 
-  public mutating func round(screen aScreen: UIScreen = .main) {
-    self = rounded(screen: aScreen)
+  public mutating func round(scaleProvider aScaleProvider: ScaleProviderType = ScaleSource.default) {
+    self = rounded(scaleProvider: aScaleProvider)
   }
 
-  public mutating func ceil(screen aScreen: UIScreen = .main) {
-    self = celled(screen: aScreen)
+  public mutating func ceil(scaleProvider aScaleProvider: ScaleProviderType = ScaleSource.default) {
+    self = celled(scaleProvider: aScaleProvider)
   }
 
-  public mutating func floor(screen aScreen: UIScreen = .main) {
-    self = floored(screen: aScreen)
+  public mutating func floor(scaleProvider aScaleProvider: ScaleProviderType = ScaleSource.default) {
+    self = floored(scaleProvider: aScaleProvider)
   }
 
 }
