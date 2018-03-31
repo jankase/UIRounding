@@ -1,15 +1,25 @@
 os: osx
 language: swift
 osx_image: xcode9.2
+
+branches:
+  only:
+    - develop
+    - master
+
 xcode_project: UIRounding.xcodeproj
-xcode_sdk: iphonesimulator11.2
-xcode_scheme:
-  - UIRounding_iOS
-  - UIRounding_macOS
-  - UIRounding_watchOS
-  - UIRounding_tvOS
 before_install:
-  - brew update
   - brew outdated carthage || brew upgrade carthage
+  - brew outdated swiftlint || brew upgrade swiftlint
 before_script:
   - carthage bootstrap
+matrix:
+  include:
+    - xcode_scheme: UIRounding_iOS
+      xcode_sdk: iphonesimulator11.2
+    - xcode_scheme: UIRounding_macOS
+      xcode_sdk: macosx10.13
+    - xcode_scheme: UIRounding_watchOS
+      xcode_sdk: watchsimulator4.2
+    - xcode_scheme: UIRounding_tvOS
+      xcode_sdk: appletvsimulator11.2
