@@ -6,7 +6,7 @@ before_install:
 before_script:
 - carthage bootstrap
 script:
-  - xcodebuild clean & xcodebuild test -sdk iphonesimulator11.2 -project UIRounding.xcodeproj -schema UIRounding_iOS CODE_SIGNING_REQUIRED=NO
+  - xcodebuild clean & xcodebuild test -project UIRounding.xcodeproj -scheme UIRounding_iOS -destination 'platform=iOS Simulator,name=iPhone X,OS=11.2' ENABLE_TESTABILITY=YES
 env:
   global:
     secure: gLnUvgO0+/Uzj02g+R/TfX8gH2lqVPbz9LJ2fyJ/Hl6Chd3RvZI1Bs8dVumEzypuwOmWIlcBTbWm6jY87z5gl/WoS6wGyZyUOM5z0cMdIsu7rQDR678PofetSl1yAtqelM0KSQYWPOmCcSKz/EOp7j41BrfSANwszYDpX2WRfAUg7YskKPfs3Dt40diyUIMsbaxM+I0U3iF6VWVYlhHRHLt7zS1notdv4WYkE1fswaCez957w/UPKOoAaBOMKfODMV9WkC4VCphmY2//ZA4ETDu3ofi+znsQDnPIf8r/UjBy7gQgDQOZytwxpVJz8S5CrCspY8fMM9Mr05982VfGxr0YQSGadomnsapUz6YkywSsy1c3CBA+cDH4V9pYHd3j+SyHDL0i/Q4wxqq4jnWlmtfAzS9+6NTV4WnoI6wzi0wa6zkAgn2tQYYHxX1f3JTy1tRdZDARkpZZwz5vrAUTQxDMSb/nWJ5fzdddhYYklYNRSucAMSgA0pVkL003m803QUX3IDLWmgNI0jN7RPKA3MchppMP6KfubBJdB3jI/23emRaXYOAFplKBcF6AcAvazfw1HWqQsjBz6W3bt5cdAURWvCt7W5WuAvc3hv0YP07MjZkF130A6C7aHWzdUY3htQEGaqd6PlQaC9Wa4AIpKVfh2H9B653h7WS4rLdbUw0=
