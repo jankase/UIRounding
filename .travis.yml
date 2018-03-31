@@ -18,7 +18,7 @@ env:
   - OSX_SDK=macosx10.13
   - TVOS_SDK=appletvsimulator11.2
   - WATCHOS_SDK=watchsimulator4.2
-  - secure: nEwSLlgxZxN06ODq/BLLNM0dmHaMsK6WjcQ5r6KsHhQAxkooJ2Ao8RZEHz7jWpTnKr7vmbHrLtFBIQtzK0wPVbr7Mbrk84JbzxkN1CjZfdDmTCxJLQ/rM9cAv7eA9/D0ZTxlu6Ze8Wi8wEiPNna3pxr6e3GxekwDA97GTFdsrhaKZEdXlxCzBiN81UqVeryVOslS2VCEf0VdPDrH1pQBHsuJYX3+G7XugFV0Z1V5A2sGpagqpUc2F659+hE4bgl1bk+Tt/jCfamZGYj+B+gC7HLsI7Np7jsUTvJXkDjhG8eYfXpVJ0s+t5LjC1nskqkb4bMFumzOO0xaUR2EUEzjww5Rbet2tQzHry3e0L2IIMiD3SNLnlRHNxS+5VlazHVxJFQeIIWi3IccwjZ219Jr9zN07B4bghlZW0w7oiZ9oDOF9HjZJYTm/YRVI/H+PZoGZ32N5SX4LfrSdmUSlWieOkYEI6v4VYRJF4dOQ8iBeqN/JHKO3G0efgRBu2YNR6jFdy8PSoD+0IoKCwdC803j1lsDriR8ETAP2bCxw0HK1nV1vmh9kNnHq1euHBhjI9MP26qLb2oBtSWHQWkStbFHzy1XFfilWG2Afd3hjEN+QAkvKT66Y1WlqQs5jTyWS8UBkVn4H8+wuxbnFtW3ZQzZy9+EW3e//5kKPPywNILSQ2c=
+  - secure: "UG3/E83Zc+8fzcHP3z5s4aABxZ/niAoIhw8MVHs2bWAF0aEgFkcEYZqBjsvNcvHHD+/Cjpg0IFMc8srADoocjR13YHsMDRPm2fdr2std3Mh755tdDHI/31vd53A2taAOr67Ap7dlz9LdsLKM0f6/PYcASotTEXtZHKoo0Gqe/5+bgZYuynuzRa74/T0nN7Gv+gmB9l1gDgUz+NAWmKOBwycF1Hwfm/y7GFJFlxni7m6/jGzWIcBOEYq/QK6a6T9+UYJ6fvh+Lo/+fsC59dJO9u7AsRSQshCNe3U/nMNDb6XSY66DyuOkqb2LSKXBvYW+4IGLfAmya6gOtx/XCjOKHxD6VeRMFBeL8mMKBxmrL7045DKgQzt0EHt0mFp+OuUC788i/DvfPVPxG0Ttol/4EU7Ia2snq1HXIG5ZkBDl5BzqJh9ZAPPQbaQQMTy5flabhcCdNFOBnOZIFdGbuUZ2iPOy7Os2yFZ/fFEHKBc4xq3ZsGtDoPINQBW6PX9XOT20DhFw71gcE416k8b8lpUp7VO0ts7zgvg10OX9CNW99RUEd+/43nbsrtjT9eTKbDTOn9jDjyGMtbpBCzVRfHU4e+QWfMQNOvKt3yRjZqnDU/24F5Uus3WrnzzBWEz6ZdX7uVMOvuudpr/9EqOdJ57C2i6yc1B5UQHYsiKlgPJO0jI="
   matrix:
   - DESTINATION="OS=8.0,name=iPhone 4S"           SCHEME="$IOS_FRAMEWORK_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES"
   - DESTINATION="OS=9.0,name=iPhone 5"            SCHEME="$IOS_FRAMEWORK_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES"
@@ -41,8 +41,10 @@ script:
     fi
 
 before_install:
-- composer config --global github-oauth.github.com "$GITHUB_TOKEN"
+- composer config -g github-oauth.github.com "$GITHUB_TOKEN"
 - brew outdated carthage || brew upgrade carthage
 - brew outdated swiftlint || brew upgrade swiftlint
+install:
+  - composer install --dev --prefer-dist
 before_script:
 - carthage bootstrap
