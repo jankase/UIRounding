@@ -1,10 +1,13 @@
 language: objective-c
 osx_image: xcode9.2
+cache:
+  directories:
+  - Carthage
 before_install:
 - brew outdated carthage || brew upgrade carthage
 - brew outdated swiftlint || brew upgrade swiftlint
 before_script:
-- carthage bootstrap
+- carthage bootstrap --verbose --cache-builds
 script:
   - set -o pipefail
   - xcodebuild clean & xcodebuild test -project $PROJECT_NAME -scheme $SCHEME_NAME -destination "$DESTINATION" ENABLE_TESTABILITY=YES | xcpretty
