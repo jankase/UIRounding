@@ -7,7 +7,7 @@ before_script:
 - carthage bootstrap
 script:
   - set -o pipefail
-  - xcodebuild clean & xcodebuild test -project $PROJECT_NAME -scheme $SCHEME_NAME -destination $DESTINATION ENABLE_TESTABILITY=YES | xcpretty
+  - xcodebuild clean & xcodebuild test -project $PROJECT_NAME -scheme $SCHEME_NAME -destination "$DESTINATION" ENABLE_TESTABILITY=YES | xcpretty
 env:
   global:
   - PROJECT_NAME: UIRounding.xcodeproj
