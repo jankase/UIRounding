@@ -42,7 +42,5 @@ script:
 before_install:
 - brew outdated carthage || brew upgrade carthage
 - brew outdated swiftlint || brew upgrade swiftlint
-install:
-  - composer install --dev --prefer-dist
 before_script:
 - carthage bootstrap
