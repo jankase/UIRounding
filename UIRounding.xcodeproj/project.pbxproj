@@ -886,6 +886,7 @@
 		1DB1E631206CCB2900A2A425 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8WS8N285FL;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -909,6 +910,7 @@
 		1DB1E632206CCB2900A2A425 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8WS8N285FL;
 				FRAMEWORK_SEARCH_PATHS = (
