@@ -7,6 +7,7 @@ before_install:
 - brew outdated carthage || brew upgrade carthage
 - brew outdated swiftlint || brew upgrade swiftlint
 before_script:
+- rm -rf ~/Library/Developer/Xcode/DerivedData
 - carthage bootstrap --no-use-binaries --cache-builds --platform $CARTHAGE_PLATFORM
 script:
   - set -o pipefail
