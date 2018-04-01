@@ -21,3 +21,5 @@ env:
   - SCHEME_NAME="UIRounding_iOS" DESTINATION="platform=iOS Simulator,name=iPhone 6,OS=10.3.1" CARTHAGE_PLATFORM="ios"
   - SCHEME_NAME="UIRounding_iOS" DESTINATION="platform=iOS Simulator,name=iPhone 5s,OS=9.3" CARTHAGE_PLATFORM="ios"
   - SCHEME_NAME="UIRounding_iOS" DESTINATION="platform=iOS Simulator,name=iPhone 4s,OS=8.3" CARTHAGE_PLATFORM="ios"
+
+  - SCHEME_NAME="UIRounding_macOS" DESTINATION="arch=x86_64" CARTHAGE_PLATFORM="macos"
