@@ -1,17 +1,19 @@
 //
-//  UIRounding_watchOS.h
-//  UIRounding_watchOS
+//  UIRounding_iOS.h
+//  UIRounding_iOS
 //
-//  Created by Jan Kase on 28/03/2018.
+//  Created by Jan Kase on 01/04/2018.
 //  Copyright © 2018 Jan Kaše. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-//! Project version number for UIRounding_watchOS.
+//! Project version number for UIRounding_iOS.
 FOUNDATION_EXPORT double UIRounding_iOSVersionNumber;
 
-//! Project version string for UIRounding_watchOS.
+//! Project version string for UIRounding_iOS.
 FOUNDATION_EXPORT const unsigned char UIRounding_iOSVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <UIRounding_watchOS/PublicHeader.h>
+// In this header, you should import all the public headers of your framework using statements like #import <UIRounding_iOS/PublicHeader.h>
+
+

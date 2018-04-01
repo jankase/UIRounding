@@ -7,7 +7,7 @@ import Foundation
 import CoreGraphics
 import Nimble
 import Quick
-@testable import UIRounding
+import UIRounding
 
 class UIRoundingScale2Spec: QuickSpec {
 

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "931ADD105451B2176622C60C"
+               BlueprintIdentifier = "1D61B46C2070E5CB002AC3A7"
                BuildableName = "UIRounding.framework"
                BlueprintName = "UIRounding_iOS"
                ReferencedContainer = "container:UIRounding.xcodeproj">
@@ -43,7 +43,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "931ADD105451B2176622C60C"
+            BlueprintIdentifier = "1D61B46C2070E5CB002AC3A7"
             BuildableName = "UIRounding.framework"
             BlueprintName = "UIRounding_iOS"
             ReferencedContainer = "container:UIRounding.xcodeproj">
@@ -65,7 +65,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "931ADD105451B2176622C60C"
+            BlueprintIdentifier = "1D61B46C2070E5CB002AC3A7"
             BuildableName = "UIRounding.framework"
             BlueprintName = "UIRounding_iOS"
             ReferencedContainer = "container:UIRounding.xcodeproj">
@@ -83,7 +83,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "931ADD105451B2176622C60C"
+            BlueprintIdentifier = "1D61B46C2070E5CB002AC3A7"
             BuildableName = "UIRounding.framework"
             BlueprintName = "UIRounding_iOS"
             ReferencedContainer = "container:UIRounding.xcodeproj">
