@@ -10,7 +10,7 @@ before_script:
 - carthage bootstrap --no-use-binaries --cache-builds --platform $CARTHAGE_PLATFORM
 script:
   - set -o pipefail
-  - xcodebuild clean & xcodebuild test -project $PROJECT_NAME -scheme $SCHEME_NAME -destination "$DESTINATION" ENABLE_TESTABILITY=YES CODE_SIGNING_REQUIRED=NO | xcpretty
+  - xcodebuild clean & xcodebuild test -project $PROJECT_NAME -scheme $SCHEME_NAME -destination "$DESTINATION" ENABLE_TESTABILITY=YES CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO | xcpretty
 env:
   global:
   - PROJECT_NAME: UIRounding.xcodeproj
