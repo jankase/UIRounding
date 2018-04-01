@@ -6,9 +6,11 @@
 //  Copyright © 2018 Jan Kaše. All rights reserved.
 //
 
+import Foundation
+import CoreGraphics
 import Quick
 import Nimble
-import UIRounding
+@testable import UIRounding
 
 class UIRoundingScale1Spec: QuickSpec {
 

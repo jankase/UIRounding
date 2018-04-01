@@ -4,9 +4,10 @@
 //
 
 import Foundation
+import CoreGraphics
 import Quick
 import Nimble
-import UIRounding
+@testable import UIRounding
 
 class UIRoundingScale3Spec: QuickSpec {
 

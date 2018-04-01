@@ -7,7 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1DB1E62E206CCB2900A2A425 /* UIRounding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 931AD4DEEEB31BDC44602504 /* UIRounding.framework */; };
+		1D61B4582070CCAC002AC3A7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D61B4572070CCAC002AC3A7 /* CoreGraphics.framework */; };
+		1D61B45A2070CCBA002AC3A7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D61B4592070CCBA002AC3A7 /* CoreGraphics.framework */; };
+		1D61B45C2070CCC7002AC3A7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D61B45B2070CCC7002AC3A7 /* CoreGraphics.framework */; };
+		1D61B45E2070CCD2002AC3A7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D61B45D2070CCD2002AC3A7 /* CoreGraphics.framework */; };
+		1D61B4602070CD19002AC3A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D61B45F2070CD19002AC3A7 /* Foundation.framework */; };
+		1D61B4622070CD24002AC3A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D61B4612070CD24002AC3A7 /* Foundation.framework */; };
+		1D61B4642070CD2E002AC3A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D61B4632070CD2E002AC3A7 /* Foundation.framework */; };
+		1D61B4662070CD38002AC3A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D61B4652070CD38002AC3A7 /* Foundation.framework */; };
+		1D61B4672070CDD2002AC3A7 /* UIRounding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 931AD4DEEEB31BDC44602504 /* UIRounding.framework */; };
 		1DBD7CE8206BECC500D09DD2 /* UIRounding_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DBD7CE6206BECC500D09DD2 /* UIRounding_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1DBD7CF5206C0C1100D09DD2 /* UIRounding_watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DBD7CF3206C0C1100D09DD2 /* UIRounding_watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1DBD7D02206C0C2600D09DD2 /* UIRounding_tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DBD7D00206C0C2600D09DD2 /* UIRounding_tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -96,6 +104,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D61B4572070CCAC002AC3A7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1D61B4592070CCBA002AC3A7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		1D61B45B2070CCC7002AC3A7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		1D61B45D2070CCD2002AC3A7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		1D61B45F2070CD19002AC3A7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D61B4612070CD24002AC3A7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		1D61B4632070CD2E002AC3A7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		1D61B4652070CD38002AC3A7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		1DB1E629206CCB2900A2A425 /* UIRounding_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIRounding_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DB1E62D206CCB2900A2A425 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DB1E635206D3EED00A2A425 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
@@ -151,9 +167,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D61B4672070CDD2002AC3A7 /* UIRounding.framework in Frameworks */,
 				1DD73FAE206F902400F1AAD4 /* Nimble.framework in Frameworks */,
 				1DD73FAF206F902400F1AAD4 /* Quick.framework in Frameworks */,
-				1DB1E62E206CCB2900A2A425 /* UIRounding.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +177,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D61B4622070CD24002AC3A7 /* Foundation.framework in Frameworks */,
+				1D61B45A2070CCBA002AC3A7 /* CoreGraphics.framework in Frameworks */,
 				1DD73F83206EBCA600F1AAD4 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -169,6 +187,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D61B4642070CD2E002AC3A7 /* Foundation.framework in Frameworks */,
+				1D61B45C2070CCC7002AC3A7 /* CoreGraphics.framework in Frameworks */,
 				1DD73FC1206FED1100F1AAD4 /* WatchKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,6 +197,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D61B4662070CD38002AC3A7 /* Foundation.framework in Frameworks */,
+				1D61B45E2070CCD2002AC3A7 /* CoreGraphics.framework in Frameworks */,
 				1DD73FC5206FED3D00F1AAD4 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,6 +227,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D61B4602070CD19002AC3A7 /* Foundation.framework in Frameworks */,
+				1D61B4582070CCAC002AC3A7 /* CoreGraphics.framework in Frameworks */,
 				1DD73FC3206FED2600F1AAD4 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,6 +247,14 @@
 		1DB1E634206D3EED00A2A425 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1D61B45F2070CD19002AC3A7 /* Foundation.framework */,
+				1D61B4612070CD24002AC3A7 /* Foundation.framework */,
+				1D61B4632070CD2E002AC3A7 /* Foundation.framework */,
+				1D61B4652070CD38002AC3A7 /* Foundation.framework */,
+				1D61B4572070CCAC002AC3A7 /* CoreGraphics.framework */,
+				1D61B4592070CCBA002AC3A7 /* CoreGraphics.framework */,
+				1D61B45B2070CCC7002AC3A7 /* CoreGraphics.framework */,
+				1D61B45D2070CCD2002AC3A7 /* CoreGraphics.framework */,
 				1DD73FC2206FED2600F1AAD4 /* UIKit.framework */,
 				1DD73FC4206FED3D00F1AAD4 /* UIKit.framework */,
 				1DD73FC0206FED1100F1AAD4 /* WatchKit.framework */,
