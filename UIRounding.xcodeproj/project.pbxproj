@@ -27,9 +27,7 @@
 		1DBD7CF5206C0C1100D09DD2 /* UIRounding_watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DBD7CF3206C0C1100D09DD2 /* UIRounding_watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1DBD7D02206C0C2600D09DD2 /* UIRounding_tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DBD7D00206C0C2600D09DD2 /* UIRounding_tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1DD73F83206EBCA600F1AAD4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD73F82206EBCA600F1AAD4 /* Cocoa.framework */; };
-		1DD73F8B206F8B9800F1AAD4 /* UIRounding_tvOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD73F8A206F8B9800F1AAD4 /* UIRounding_tvOSTests.swift */; };
 		1DD73F8D206F8B9800F1AAD4 /* UIRounding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DBD7CFE206C0C2500D09DD2 /* UIRounding.framework */; };
-		1DD73F9A206F8BCB00F1AAD4 /* UIRounding_macOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD73F99206F8BCB00F1AAD4 /* UIRounding_macOSTests.swift */; };
 		1DD73F9C206F8BCB00F1AAD4 /* UIRounding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DBD7CE4206BECC500D09DD2 /* UIRounding.framework */; };
 		1DD73FAE206F902400F1AAD4 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DB1E636206D3EED00A2A425 /* Nimble.framework */; };
 		1DD73FAF206F902400F1AAD4 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DB1E635206D3EED00A2A425 /* Quick.framework */; };
@@ -116,10 +114,8 @@
 		1DBD7D01206C0C2600D09DD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DD73F82206EBCA600F1AAD4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		1DD73F88206F8B9800F1AAD4 /* UIRounding_tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIRounding_tvOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1DD73F8A206F8B9800F1AAD4 /* UIRounding_tvOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIRounding_tvOSTests.swift; sourceTree = "<group>"; };
 		1DD73F8C206F8B9800F1AAD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DD73F97206F8BCB00F1AAD4 /* UIRounding_macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIRounding_macOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1DD73F99206F8BCB00F1AAD4 /* UIRounding_macOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIRounding_macOSTests.swift; sourceTree = "<group>"; };
 		1DD73F9B206F8BCB00F1AAD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DD73FB6206F951900F1AAD4 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/tvOS/Quick.framework; sourceTree = "<group>"; };
 		1DD73FB7206F951A00F1AAD4 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/tvOS/Nimble.framework; sourceTree = "<group>"; };
@@ -294,7 +290,6 @@
 		1DD73F89206F8B9800F1AAD4 /* UIRounding_tvOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				1DD73F8A206F8B9800F1AAD4 /* UIRounding_tvOSTests.swift */,
 				1DD73F8C206F8B9800F1AAD4 /* Info.plist */,
 			);
 			path = UIRounding_tvOSTests;
@@ -303,7 +298,6 @@
 		1DD73F98206F8BCB00F1AAD4 /* UIRounding_macOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				1DD73F99206F8BCB00F1AAD4 /* UIRounding_macOSTests.swift */,
 				1DD73F9B206F8BCB00F1AAD4 /* Info.plist */,
 			);
 			path = UIRounding_macOSTests;
@@ -792,7 +786,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DD73F8B206F8B9800F1AAD4 /* UIRounding_tvOSTests.swift in Sources */,
 				931ADB400CE889DC3866C540 /* UIRoundingSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -801,7 +794,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DD73F9A206F8BCB00F1AAD4 /* UIRounding_macOSTests.swift in Sources */,
 				931AD8EB325E96F49E87DB5C /* UIRoundingSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

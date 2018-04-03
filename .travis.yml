@@ -11,7 +11,7 @@ before_script:
 - if [ $CARTHAGE_PLATFORM != "watchos" ]; then
     carthage bootstrap --no-use-binaries --cache-builds --platform $CARTHAGE_PLATFORM ;
   fi
-- if [ $COVERAGE == "YES"]; then
+- if [ $COVERAGE == "YES" ]; then
     gem install slather -N;
     curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-darwin-amd64 > ./cc-test-reporter;
     chmod +x ./cc-test-reporter;
