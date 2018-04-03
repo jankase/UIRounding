@@ -6,7 +6,7 @@
 import Foundation
 import CoreGraphics
 
-public struct ScreenRounding {
+public class ScreenRounding {
 
   public var scaleProvider: ScaleProviderType {
     didSet {

@@ -6,51 +6,20 @@
 import Foundation
 import CoreGraphics
 
-extension ScreenRounding {
+public class SizeScreenRounding: ScreenRounding, ScreenRoundingType {
 
-  public func round(size aSize: CGSize) -> CGSize {
-    return transform(size: aSize, by: .toNearestOrAwayFromZero)
-  }
-
-  public func ceil(size aSize: CGSize) -> CGSize {
-    return transform(size: aSize, by: .awayFromZero)
-  }
-
-  public func floor(size aSize: CGSize) -> CGSize {
-    return transform(size: aSize, by: .towardZero)
-  }
-
-  public func transform(size aSize: CGSize, by aRoundingRule: FloatingPointRoundingRule) -> CGSize {
-    return CGSize(width: roundingHelper.transform(value: aSize.width, byRule: aRoundingRule),
-        height: roundingHelper.transform(value: aSize.height, byRule: aRoundingRule))
+  public func transform(value aValue: CGSize, by aRoundingRule: FloatingPointRoundingRule) -> CGSize {
+    return CGSize(width: roundingHelper.transform(value: aValue.width, byRule: aRoundingRule),
+                  height: roundingHelper.transform(value: aValue.height, byRule: aRoundingRule))
   }
 
 }
 
-extension CGSize {
 
-  public func rounded(scaleProvider aScaleProvider: ScaleProviderType = ScaleSource.default) -> CGSize {
-    return ScreenRounding(scaleProvider: aScaleProvider).round(size: self)
-  }
+extension CGSize: ScreenRoundableType {
 
-  public func celled(scaleProvider aScaleProvider: ScaleProviderType = ScaleSource.default) -> CGSize {
-    return ScreenRounding(scaleProvider: aScaleProvider).ceil(size: self)
-  }
-
-  public func floored(scaleProvider aScaleProvider: ScaleProviderType = ScaleSource.default) -> CGSize {
-    return ScreenRounding(scaleProvider: aScaleProvider).floor(size: self)
-  }
-
-  public mutating func round(scaleProvider aScaleProvider: ScaleProviderType = ScaleSource.default) {
-    self = rounded(scaleProvider: aScaleProvider)
-  }
-
-  public mutating func ceil(scaleProvider aScaleProvider: ScaleProviderType = ScaleSource.default) {
-    self = celled(scaleProvider: aScaleProvider)
-  }
-
-  public mutating func floor(scaleProvider aScaleProvider: ScaleProviderType = ScaleSource.default) {
-    self = floored(scaleProvider: aScaleProvider)
+  public static func screenRounding(scaleProvider aScaleProvider: ScaleProviderType) -> SizeScreenRounding {
+    return SizeScreenRounding(scaleProvider: aScaleProvider)
   }
 
 }

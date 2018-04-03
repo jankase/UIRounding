@@ -6,11 +6,11 @@
 import Foundation
 import CoreGraphics
 
-struct UIRoundingSpec {
+struct RoundingSpec<T> {
 
-  var inputValue: CGFloat
-  var roundResult: CGFloat
-  var ceilResult: CGFloat
-  var floorResult: CGFloat
+  var inputValue: T
+  var roundResult: T
+  var ceilResult: T
+  var floorResult: T
 
 }

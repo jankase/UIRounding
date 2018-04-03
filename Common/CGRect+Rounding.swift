@@ -6,53 +6,35 @@
 import Foundation
 import CoreGraphics
 
-extension ScreenRounding {
+public class RectScreenRounding: ScreenRounding, ScreenRoundingType {
 
-  public func round(rect aRect: CGRect) -> CGRect {
-    return transform(rect: aRect, originRounding: .toNearestOrAwayFromZero, sizeRoundingRule: .toNearestOrAwayFromZero)
-  }
-
-  public func ceil(rect aRect: CGRect) -> CGRect {
-    return transform(rect: aRect, originRounding: .towardZero, sizeRoundingRule: .awayFromZero)
-  }
-
-  public func floor(rect aRect: CGRect) -> CGRect {
-    return transform(rect: aRect, originRounding: .awayFromZero, sizeRoundingRule: .towardZero)
-  }
-
-  public func transform(rect aRect: CGRect,
-                        originRounding anOriginRoundingRule: FloatingPointRoundingRule = .down,
-                        sizeRoundingRule aSizeRoundingRule: FloatingPointRoundingRule = .up) -> CGRect {
-    return CGRect(origin: transform(point: aRect.origin, by: anOriginRoundingRule),
-                  size: transform(size: aRect.size, by: aSizeRoundingRule))
+  public func transform(value aValue: CGRect, by aRoundingRule: FloatingPointRoundingRule) -> CGRect {
+    let theOriginRoundingRule: FloatingPointRoundingRule
+    let theSizeRoundingRule: FloatingPointRoundingRule
+    switch aRoundingRule {
+    case .towardZero:
+      theOriginRoundingRule = .awayFromZero
+      theSizeRoundingRule = .towardZero
+    case .awayFromZero:
+      theOriginRoundingRule = .towardZero
+      theSizeRoundingRule = .awayFromZero
+    case .toNearestOrAwayFromZero:
+      theOriginRoundingRule = .toNearestOrAwayFromZero
+      theSizeRoundingRule = .toNearestOrAwayFromZero
+    default: fatalError()
+    }
+    return CGRect(origin: CGPoint.screenRounding(scaleProvider: scaleProvider).transform(value: aValue.origin,
+                                                                                         by: theOriginRoundingRule),
+                  size: CGSize.screenRounding(scaleProvider: scaleProvider).transform(value: aValue.size,
+                                                                                      by: theSizeRoundingRule))
   }
 
 }
 
-extension CGRect {
+extension CGRect: ScreenRoundableType {
 
-  public func rounded(scaleProvider aScaleProvider: ScaleProviderType = ScaleSource.default) -> CGRect {
-    return ScreenRounding(scaleProvider: aScaleProvider).round(rect: self)
-  }
-
-  public func celled(scaleProvider aScaleProvider: ScaleProviderType = ScaleSource.default) -> CGRect {
-    return ScreenRounding(scaleProvider: aScaleProvider).ceil(rect: self)
-  }
-
-  public func floored(scaleProvider aScaleProvider: ScaleProviderType = ScaleSource.default) -> CGRect {
-    return ScreenRounding(scaleProvider: aScaleProvider).floor(rect: self)
-  }
-
-  public mutating func round(scaleProvider aScaleProvider: ScaleProviderType = ScaleSource.default) {
-    self = rounded(scaleProvider: aScaleProvider)
-  }
-
-  public mutating func ceil(scaleProvider aScaleProvider: ScaleProviderType = ScaleSource.default) {
-    self = celled(scaleProvider: aScaleProvider)
-  }
-
-  public mutating func floor(scaleProvider aScaleProvider: ScaleProviderType = ScaleSource.default) {
-    self = floored(scaleProvider: aScaleProvider)
+  public static func screenRounding(scaleProvider aScaleProvider: ScaleProviderType) -> RectScreenRounding {
+    return RectScreenRounding(scaleProvider: aScaleProvider)
   }
 
 }
