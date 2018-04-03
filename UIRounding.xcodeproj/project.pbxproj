@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -42,30 +42,27 @@
 		931AD084DFCFF34B0A5DF8EF /* CGRect+Rounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AD784CF5FA5B1EEA220F6 /* CGRect+Rounding.swift */; };
 		931AD19D9CAFE00F611F2C6C /* ScaleSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AD390DD83A388D90BAD5F /* ScaleSource.swift */; };
 		931AD206DBAFA138A21372B4 /* ScreenRounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AD38B163CE5C219B0972E /* ScreenRounding.swift */; };
-		931AD343E382C9BCEBAD3AC3 /* UIRoundingScale1Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931ADE81545B8C0911210229 /* UIRoundingScale1Spec.swift */; };
+		931AD343E382C9BCEBAD3AC3 /* UIRoundingScaleSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931ADE81545B8C0911210229 /* UIRoundingScaleSpec.swift */; };
 		931AD344BEB483C2AA2491DA /* WKInterfaceDevice+ScaleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931ADC8225B32487C7A0318F /* WKInterfaceDevice+ScaleProvider.swift */; };
-		931AD3FA948CA253140061DA /* UIRoundingScale2Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931ADCBAB67D118E5E942601 /* UIRoundingScale2Spec.swift */; };
 		931AD43CFEE6AC8F133B4C30 /* CGSize+Rounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931ADB50744B7E53A43C01C3 /* CGSize+Rounding.swift */; };
 		931AD458A1FF9940B8D36581 /* CGRect+Rounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AD784CF5FA5B1EEA220F6 /* CGRect+Rounding.swift */; };
 		931AD55DAF63017B220A80B2 /* CGPoint+Rounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931ADD2DC3748F32AC849A35 /* CGPoint+Rounding.swift */; };
 		931AD57390E7B1C6827AEF43 /* CGPoint+Rounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931ADD2DC3748F32AC849A35 /* CGPoint+Rounding.swift */; };
-		931AD5C50C07789A5CE9BC9D /* UIRoundingScale3Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931ADB67C2E43A1BFA4CCE3C /* UIRoundingScale3Spec.swift */; };
 		931AD5F45CF94466702DDD8F /* Rounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931ADD8B9D5636FE20451E49 /* Rounding.swift */; };
 		931AD60317014E33128D3BB9 /* CGRect+Rounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AD784CF5FA5B1EEA220F6 /* CGRect+Rounding.swift */; };
+		931AD64A7E8C4D74095C06CF /* UIRoundingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AD63B43901B73F2B54032 /* UIRoundingSpec.swift */; };
 		931AD6B4FFD6EC8F50EDC2C8 /* NSScreen+ScaleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AD04AE3190B0B3D68BA85 /* NSScreen+ScaleProvider.swift */; };
 		931AD6FDFEC1F757417EBC2E /* CGSize+Rounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931ADB50744B7E53A43C01C3 /* CGSize+Rounding.swift */; };
 		931AD749A6E76BB3745A1C7A /* ScaleProviderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AD5EBABEA8FB18D126D7A /* ScaleProviderType.swift */; };
 		931AD7F8F93A7A5D548D022A /* ScaleProviderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AD5EBABEA8FB18D126D7A /* ScaleProviderType.swift */; };
 		931AD80955EF06FF882FD1A9 /* ScaleSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931ADBFED1348E7F7A60B55F /* ScaleSource.swift */; };
+		931AD8EB325E96F49E87DB5C /* UIRoundingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AD63B43901B73F2B54032 /* UIRoundingSpec.swift */; };
 		931AD91A71DDD8BDC9DEF3E8 /* FixScaleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AD706CEA2FF1B29AC64A2 /* FixScaleProvider.swift */; };
-		931AD930215578EC65CADCCB /* UIRoundingScale3Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931ADB67C2E43A1BFA4CCE3C /* UIRoundingScale3Spec.swift */; };
 		931AD95F2D63F4DBD2136715 /* ScaleProviderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AD5EBABEA8FB18D126D7A /* ScaleProviderType.swift */; };
 		931ADAB6252B485EF1B2045E /* CGSize+Rounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931ADB50744B7E53A43C01C3 /* CGSize+Rounding.swift */; };
-		931ADB383C40C720DAC16F20 /* UIRoundingScale3Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931ADB67C2E43A1BFA4CCE3C /* UIRoundingScale3Spec.swift */; };
 		931ADB3B112D3A2B6532303F /* Rounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931ADD8B9D5636FE20451E49 /* Rounding.swift */; };
+		931ADB400CE889DC3866C540 /* UIRoundingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AD63B43901B73F2B54032 /* UIRoundingSpec.swift */; };
 		931ADB6BD65E1ADC1B9DC3F5 /* Rounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931ADD8B9D5636FE20451E49 /* Rounding.swift */; };
-		931ADBF2EC52CF24A511B1E2 /* UIRoundingScale2Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931ADCBAB67D118E5E942601 /* UIRoundingScale2Spec.swift */; };
-		931ADBFC0E762922DFDE95A9 /* UIRoundingScale2Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931ADCBAB67D118E5E942601 /* UIRoundingScale2Spec.swift */; };
 		931ADD440677EB6D2DA14FE9 /* ScreenRounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AD38B163CE5C219B0972E /* ScreenRounding.swift */; };
 		931ADD4DDDBE5EF29A9BC968 /* UIScreen+ScaleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931ADBA23AAA1CDD42D8AACF /* UIScreen+ScaleProvider.swift */; };
 		931ADD573E92F10910A7D9F0 /* FixScaleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AD706CEA2FF1B29AC64A2 /* FixScaleProvider.swift */; };
@@ -135,20 +132,20 @@
 		931AD38B163CE5C219B0972E /* ScreenRounding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenRounding.swift; sourceTree = "<group>"; };
 		931AD390DD83A388D90BAD5F /* ScaleSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleSource.swift; sourceTree = "<group>"; };
 		931AD5EBABEA8FB18D126D7A /* ScaleProviderType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleProviderType.swift; sourceTree = "<group>"; };
+		931AD63B43901B73F2B54032 /* UIRoundingSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIRoundingSpec.swift; sourceTree = "<group>"; };
 		931AD706CEA2FF1B29AC64A2 /* FixScaleProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixScaleProvider.swift; sourceTree = "<group>"; };
 		931AD784CF5FA5B1EEA220F6 /* CGRect+Rounding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+Rounding.swift"; sourceTree = "<group>"; };
 		931AD80C350A622C52DC1880 /* Cartfile.private */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.private; path = Cartfile.private; sourceTree = "<group>"; };
 		931ADB50744B7E53A43C01C3 /* CGSize+Rounding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+Rounding.swift"; sourceTree = "<group>"; };
-		931ADB67C2E43A1BFA4CCE3C /* UIRoundingScale3Spec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIRoundingScale3Spec.swift; sourceTree = "<group>"; };
 		931ADBA23AAA1CDD42D8AACF /* UIScreen+ScaleProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+ScaleProvider.swift"; sourceTree = "<group>"; };
 		931ADBFED1348E7F7A60B55F /* ScaleSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleSource.swift; sourceTree = "<group>"; };
 		931ADC7278174D62A694A0BF /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = file.yml; path = .travis.yml; sourceTree = "<group>"; };
 		931ADC8225B32487C7A0318F /* WKInterfaceDevice+ScaleProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WKInterfaceDevice+ScaleProvider.swift"; sourceTree = "<group>"; };
-		931ADCBAB67D118E5E942601 /* UIRoundingScale2Spec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIRoundingScale2Spec.swift; sourceTree = "<group>"; };
 		931ADD2DC3748F32AC849A35 /* CGPoint+Rounding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Rounding.swift"; sourceTree = "<group>"; };
 		931ADD8B9D5636FE20451E49 /* Rounding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rounding.swift; sourceTree = "<group>"; };
 		931ADD8D9216E51AD810A8DA /* ScaleSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleSource.swift; sourceTree = "<group>"; };
-		931ADE81545B8C0911210229 /* UIRoundingScale1Spec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIRoundingScale1Spec.swift; sourceTree = "<group>"; };
+		931ADDD91F4D072F6DACB384 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		931ADE81545B8C0911210229 /* UIRoundingScaleSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIRoundingScaleSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -342,6 +339,7 @@
 				1DB1E634206D3EED00A2A425 /* Frameworks */,
 				931ADCD67E5209E6EFDAEF47 /* Common_Tests */,
 				931ADC7278174D62A694A0BF /* .travis.yml */,
+				931ADDD91F4D072F6DACB384 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -372,9 +370,8 @@
 		931ADCD67E5209E6EFDAEF47 /* Common_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				931ADCBAB67D118E5E942601 /* UIRoundingScale2Spec.swift */,
-				931ADB67C2E43A1BFA4CCE3C /* UIRoundingScale3Spec.swift */,
-				931ADE81545B8C0911210229 /* UIRoundingScale1Spec.swift */,
+				931ADE81545B8C0911210229 /* UIRoundingScaleSpec.swift */,
+				931AD63B43901B73F2B54032 /* UIRoundingSpec.swift */,
 			);
 			path = Common_Tests;
 			sourceTree = "<group>";
@@ -557,6 +554,7 @@
 				TargetAttributes = {
 					1D61B46C2070E5CB002AC3A7 = {
 						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
 					};
 					1DB1E628206CCB2900A2A425 = {
 						CreatedOnToolsVersion = 9.2;
@@ -591,7 +589,7 @@
 				};
 			};
 			buildConfigurationList = 931ADB98127934D93E6A5264 /* Build configuration list for PBXProject "UIRounding" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -737,9 +735,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				931ADBFC0E762922DFDE95A9 /* UIRoundingScale2Spec.swift in Sources */,
-				931ADB383C40C720DAC16F20 /* UIRoundingScale3Spec.swift in Sources */,
-				931AD343E382C9BCEBAD3AC3 /* UIRoundingScale1Spec.swift in Sources */,
+				931AD343E382C9BCEBAD3AC3 /* UIRoundingScaleSpec.swift in Sources */,
+				931AD64A7E8C4D74095C06CF /* UIRoundingSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -796,8 +793,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DD73F8B206F8B9800F1AAD4 /* UIRounding_tvOSTests.swift in Sources */,
-				931AD3FA948CA253140061DA /* UIRoundingScale2Spec.swift in Sources */,
-				931AD5C50C07789A5CE9BC9D /* UIRoundingScale3Spec.swift in Sources */,
+				931ADB400CE889DC3866C540 /* UIRoundingSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -806,8 +802,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DD73F9A206F8BCB00F1AAD4 /* UIRounding_macOSTests.swift in Sources */,
-				931ADBF2EC52CF24A511B1E2 /* UIRoundingScale2Spec.swift in Sources */,
-				931AD930215578EC65CADCCB /* UIRoundingScale3Spec.swift in Sources */,
+				931AD8EB325E96F49E87DB5C /* UIRoundingSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -841,11 +836,7 @@
 				INFOPLIST_FILE = UIRounding_iOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "eu.jkdev.UIRounding-iOS";
 				PRODUCT_MODULE_NAME = "$(inherited)";
 				PRODUCT_NAME = UIRounding;
@@ -869,11 +860,7 @@
 				INFOPLIST_FILE = UIRounding_iOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "eu.jkdev.UIRounding-iOS";
 				PRODUCT_MODULE_NAME = "$(inherited)";
 				PRODUCT_NAME = UIRounding;
@@ -895,11 +882,7 @@
 				);
 				INFOPLIST_FILE = UIRounding_iOSTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "eu.jkdev.UIRounding-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -919,11 +902,7 @@
 				);
 				INFOPLIST_FILE = UIRounding_iOSTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "eu.jkdev.UIRounding-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -945,11 +924,7 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = UIRounding_macOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "eu.jkdev.UIRounding-macOS";
 				PRODUCT_NAME = UIRounding;
@@ -973,11 +948,7 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = UIRounding_macOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "eu.jkdev.UIRounding-macOS";
 				PRODUCT_NAME = UIRounding;
@@ -1000,11 +971,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = UIRounding_watchOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "eu.jkdev.UIRounding-watchOS";
 				PRODUCT_NAME = UIRounding;
 				SDKROOT = watchos;
@@ -1028,11 +995,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = UIRounding_watchOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "eu.jkdev.UIRounding-watchOS";
 				PRODUCT_NAME = UIRounding;
 				SDKROOT = watchos;
@@ -1055,11 +1018,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = UIRounding_tvOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "eu.jkdev.UIRounding-tvOS";
 				PRODUCT_NAME = UIRounding;
 				SDKROOT = appletvos;
@@ -1082,11 +1041,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = UIRounding_tvOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "eu.jkdev.UIRounding-tvOS";
 				PRODUCT_NAME = UIRounding;
 				SDKROOT = appletvos;
@@ -1110,11 +1065,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/tvOS",
 				);
 				INFOPLIST_FILE = UIRounding_tvOSTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "eu.jkdev.UIRounding-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
@@ -1137,11 +1088,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/tvOS",
 				);
 				INFOPLIST_FILE = UIRounding_tvOSTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "eu.jkdev.UIRounding-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
@@ -1166,11 +1113,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				INFOPLIST_FILE = UIRounding_macOSTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "eu.jkdev.UIRounding-macOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1194,11 +1137,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				INFOPLIST_FILE = UIRounding_macOSTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "eu.jkdev.UIRounding-macOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1256,8 +1195,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1323,7 +1261,6 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
