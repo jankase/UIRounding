@@ -17,61 +17,13 @@ class UIRoundingScaleSpec: QuickSpec {
   override func spec() {
     describe("RoundingHelper") {
       context("with scale 1") {
-        let theHelper = RoundingHelper<CGFloat>(scale: 1)
-        self._test(roundingHelper: theHelper,
-                   specification: UIRoundingSpec(inputValue: 0.5, roundResult: 1, ceilResult: 1, floorResult: 0))
-        self._test(roundingHelper: theHelper,
-                   specification: UIRoundingSpec(inputValue: 0.3, roundResult: 0, ceilResult: 1, floorResult: 0))
-        self._test(roundingHelper: theHelper,
-                   specification: UIRoundingSpec(inputValue: 0.7, roundResult: 1, ceilResult: 1, floorResult: 0))
-        self._test(roundingHelper: theHelper,
-                   specification: UIRoundingSpec(inputValue: 0.9, roundResult: 1, ceilResult: 1, floorResult: 0))
-        self._test(roundingHelper: theHelper,
-                   specification: UIRoundingSpec(inputValue: -0.3, roundResult: 0, ceilResult: 0, floorResult: -1))
-        self._test(roundingHelper: theHelper,
-                   specification: UIRoundingSpec(inputValue: 0.1, roundResult: 0, ceilResult: 1, floorResult: 0))
+        _testScale1()
       }
       context("with scale 2") {
-        let theHelper = RoundingHelper<CGFloat>(scale: 2)
-        self._test(roundingHelper: theHelper,
-                   specification: UIRoundingSpec(inputValue: 0.5, roundResult: 0.5, ceilResult: 0.5, floorResult: 0.5))
-        self._test(roundingHelper: theHelper,
-                   specification: UIRoundingSpec(inputValue: 0.3, roundResult: 0.5, ceilResult: 0.5, floorResult: 0))
-        self._test(roundingHelper: theHelper,
-                   specification: UIRoundingSpec(inputValue: 0.7, roundResult: 0.5, ceilResult: 1, floorResult: 0.5))
-        self._test(roundingHelper: theHelper,
-                   specification: UIRoundingSpec(inputValue: 0.9, roundResult: 1, ceilResult: 1, floorResult: 0.5))
-        self._test(roundingHelper: theHelper,
-                   specification: UIRoundingSpec(inputValue: -0.3, roundResult: -0.5, ceilResult: 0, floorResult: -0.5))
-        self._test(roundingHelper: theHelper,
-                   specification: UIRoundingSpec(inputValue: 0.1, roundResult: 0, ceilResult: 0.5, floorResult: 0))
+        _testScale2()
       }
       context("with scale 3") {
-        let theHelper = RoundingHelper<CGFloat>(scale: 3)
-        self._test(roundingHelper: theHelper,
-                   specification: UIRoundingSpec(inputValue: 0.5,
-                                                 roundResult: 0.6666,
-                                                 ceilResult: 0.6666,
-                                                 floorResult: 0.3333))
-        self._test(roundingHelper: theHelper,
-                   specification: UIRoundingSpec(inputValue: 0.3,
-                                                 roundResult: 0.3333,
-                                                 ceilResult: 0.3333,
-                                                 floorResult: 0))
-        self._test(roundingHelper: theHelper,
-                   specification: UIRoundingSpec(inputValue: 0.7,
-                                                 roundResult: 0.6666,
-                                                 ceilResult: 1,
-                                                 floorResult: 0.6666))
-        self._test(roundingHelper: theHelper,
-                   specification: UIRoundingSpec(inputValue: 0.9, roundResult: 1, ceilResult: 1, floorResult: 0.6666))
-        self._test(roundingHelper: theHelper,
-                   specification: UIRoundingSpec(inputValue: -0.3,
-                                                 roundResult: -0.3333,
-                                                 ceilResult: 0,
-                                                 floorResult: -0.3333))
-        self._test(roundingHelper: theHelper,
-                   specification: UIRoundingSpec(inputValue: 0.1, roundResult: 0, ceilResult: 0.3333, floorResult: 0))
+        _testScale3()
       }
     }
   }
@@ -88,6 +40,66 @@ class UIRoundingScaleSpec: QuickSpec {
         expect(aHelper.floor(value: aSpecification.inputValue)).to(beCloseTo(aSpecification.floorResult))
       }
     }
+  }
+
+  private func _testScale1() {
+    let theHelper = RoundingHelper<CGFloat>(scale: 1)
+    self._test(roundingHelper: theHelper,
+               specification: UIRoundingSpec(inputValue: 0.5, roundResult: 1, ceilResult: 1, floorResult: 0))
+    self._test(roundingHelper: theHelper,
+               specification: UIRoundingSpec(inputValue: 0.3, roundResult: 0, ceilResult: 1, floorResult: 0))
+    self._test(roundingHelper: theHelper,
+               specification: UIRoundingSpec(inputValue: 0.7, roundResult: 1, ceilResult: 1, floorResult: 0))
+    self._test(roundingHelper: theHelper,
+               specification: UIRoundingSpec(inputValue: 0.9, roundResult: 1, ceilResult: 1, floorResult: 0))
+    self._test(roundingHelper: theHelper,
+               specification: UIRoundingSpec(inputValue: -0.3, roundResult: 0, ceilResult: 0, floorResult: -1))
+    self._test(roundingHelper: theHelper,
+               specification: UIRoundingSpec(inputValue: 0.1, roundResult: 0, ceilResult: 1, floorResult: 0))
+  }
+
+  private func _testScale2() {
+    let theHelper = RoundingHelper<CGFloat>(scale: 2)
+    self._test(roundingHelper: theHelper,
+               specification: UIRoundingSpec(inputValue: 0.5, roundResult: 0.5, ceilResult: 0.5, floorResult: 0.5))
+    self._test(roundingHelper: theHelper,
+               specification: UIRoundingSpec(inputValue: 0.3, roundResult: 0.5, ceilResult: 0.5, floorResult: 0))
+    self._test(roundingHelper: theHelper,
+               specification: UIRoundingSpec(inputValue: 0.7, roundResult: 0.5, ceilResult: 1, floorResult: 0.5))
+    self._test(roundingHelper: theHelper,
+               specification: UIRoundingSpec(inputValue: 0.9, roundResult: 1, ceilResult: 1, floorResult: 0.5))
+    self._test(roundingHelper: theHelper,
+               specification: UIRoundingSpec(inputValue: -0.3, roundResult: -0.5, ceilResult: 0, floorResult: -0.5))
+    self._test(roundingHelper: theHelper,
+               specification: UIRoundingSpec(inputValue: 0.1, roundResult: 0, ceilResult: 0.5, floorResult: 0))
+  }
+
+  private func _testScale3() {
+    let theHelper = RoundingHelper<CGFloat>(scale: 3)
+    self._test(roundingHelper: theHelper,
+               specification: UIRoundingSpec(inputValue: 0.5,
+                                             roundResult: 0.6666,
+                                             ceilResult: 0.6666,
+                                             floorResult: 0.3333))
+    self._test(roundingHelper: theHelper,
+               specification: UIRoundingSpec(inputValue: 0.3,
+                                             roundResult: 0.3333,
+                                             ceilResult: 0.3333,
+                                             floorResult: 0))
+    self._test(roundingHelper: theHelper,
+               specification: UIRoundingSpec(inputValue: 0.7,
+                                             roundResult: 0.6666,
+                                             ceilResult: 1,
+                                             floorResult: 0.6666))
+    self._test(roundingHelper: theHelper,
+               specification: UIRoundingSpec(inputValue: 0.9, roundResult: 1, ceilResult: 1, floorResult: 0.6666))
+    self._test(roundingHelper: theHelper,
+               specification: UIRoundingSpec(inputValue: -0.3,
+                                             roundResult: -0.3333,
+                                             ceilResult: 0,
+                                             floorResult: -0.3333))
+    self._test(roundingHelper: theHelper,
+               specification: UIRoundingSpec(inputValue: 0.1, roundResult: 0, ceilResult: 0.3333, floorResult: 0))
   }
 
 }

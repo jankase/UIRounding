@@ -20,16 +20,16 @@ before_script:
 script:
   - set -o pipefail
   - xcodebuild clean
-  - xcodebuild build -project $PROJECT_NAME -scheme $SCHEME_NAME -destination "$DESTINATION" ENABLE_TESTABILITY=YES CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO | xcpretty
+  - xcodebuild build -project $PROJECT_NAME -scheme $SCHEME_NAME -destination "$DESTINATION" ENABLE_TESTABILITY=YES CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=YES | xcpretty
   - if [ $TESTING == "YES" ]; then
-      xcodebuild test -project $PROJECT_NAME -scheme $SCHEME_NAME -destination "$DESTINATION" ENABLE_TESTABILITY=YES CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO | xcpretty;
+      xcodebuild test -project $PROJECT_NAME -scheme $SCHEME_NAME -destination "$DESTINATION" ENABLE_TESTABILITY=YES CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=YES | xcpretty;
     fi
   - if [ $COVERAGE == "YES" ]; then
-      slather coverage -x --scheme $SCHEME_NAME $PROJECT_NAME;
+      slather coverage -x -t --scheme $SCHEME_NAME $PROJECT_NAME;
     fi
 after_script:
   - if [ $COVERAGE == "YES" ]; then
-      ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT;
+      ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT -t cobertura;
     fi
 env:
   global:
