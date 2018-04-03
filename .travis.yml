@@ -1,6 +1,7 @@
 language: swift
 osx_image: xcode9.2
 cache:
+  bundler: true
   directories:
   - Carthage
 before_install:
@@ -12,7 +13,7 @@ before_script:
     carthage bootstrap --no-use-binaries --cache-builds --platform $CARTHAGE_PLATFORM ;
   fi
 - if [ $COVERAGE == "YES" ]; then
-    gem install slather -N;
+    bundle install;
     curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-darwin-amd64 > ./cc-test-reporter;
     chmod +x ./cc-test-reporter;
     ./cc-test-reporter before-build;
