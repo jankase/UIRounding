@@ -15,7 +15,6 @@ public class SizeScreenRounding: ScreenRounding, ScreenRoundingType {
 
 }
 
-
 extension CGSize: ScreenRoundableType {
 
   public static func screenRounding(scaleProvider aScaleProvider: ScaleProviderType) -> SizeScreenRounding {

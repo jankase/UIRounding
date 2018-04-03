@@ -30,7 +30,7 @@ extension ScreenRoundableType where Rounder.Value == Self {
   public mutating func round(scaleProvider aProvider: ScaleProviderType) {
     self = rounded(scaleProvider: aProvider)
   }
-  
+
   public mutating func ceil(scaleProvider aProvider: ScaleProviderType) {
     self = celled(scaleProvider: aProvider)
   }
