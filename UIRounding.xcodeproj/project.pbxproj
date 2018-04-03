@@ -146,7 +146,6 @@
 		931AD784CF5FA5B1EEA220F6 /* CGRect+Rounding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+Rounding.swift"; sourceTree = "<group>"; };
 		931AD80C350A622C52DC1880 /* Cartfile.private */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.private; path = Cartfile.private; sourceTree = "<group>"; };
 		931ADB50744B7E53A43C01C3 /* CGSize+Rounding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+Rounding.swift"; sourceTree = "<group>"; };
-		931ADB9462BFF78845435C50 /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
 		931ADBA23AAA1CDD42D8AACF /* UIScreen+ScaleProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+ScaleProvider.swift"; sourceTree = "<group>"; };
 		931ADBFED1348E7F7A60B55F /* ScaleSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleSource.swift; sourceTree = "<group>"; };
 		931ADC7278174D62A694A0BF /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = file.yml; path = .travis.yml; sourceTree = "<group>"; };
@@ -349,7 +348,6 @@
 				931ADCD67E5209E6EFDAEF47 /* Common_Tests */,
 				931ADC7278174D62A694A0BF /* .travis.yml */,
 				931ADDD91F4D072F6DACB384 /* README.md */,
-				931ADB9462BFF78845435C50 /* Gemfile */,
 			);
 			sourceTree = "<group>";
 		};
