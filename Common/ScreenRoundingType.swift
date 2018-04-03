@@ -20,11 +20,11 @@ extension ScreenRoundingType {
   }
 
   public func ceil(value aValue: Value) -> Value {
-    return transform(value: aValue, by: .awayFromZero)
+    return transform(value: aValue, by: .up)
   }
 
   public func floor(value aValue: Value) -> Value {
-    return transform(value: aValue, by: .towardZero)
+    return transform(value: aValue, by: .down)
   }
 
 }
