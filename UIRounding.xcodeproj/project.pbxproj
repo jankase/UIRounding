@@ -37,6 +37,9 @@
 		1DD73FBD206F953800F1AAD4 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD73FBB206F953800F1AAD4 /* Quick.framework */; };
 		1DD73FC1206FED1100F1AAD4 /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD73FC0206FED1100F1AAD4 /* WatchKit.framework */; };
 		1DD73FC5206FED3D00F1AAD4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD73FC4206FED3D00F1AAD4 /* UIKit.framework */; };
+		1DF97C8A2075488B00D2A21B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD73FC2206FED2600F1AAD4 /* UIKit.framework */; };
+		1DF97C8B2075489300D2A21B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D61B4572070CCAC002AC3A7 /* CoreGraphics.framework */; };
+		1DF97C8C2075489B00D2A21B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D61B45F2070CD19002AC3A7 /* Foundation.framework */; };
 		931AD027FA44782D932033BC /* ScreenRoundingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AD4AFCCC3DBB8A44299B3 /* ScreenRoundingType.swift */; };
 		931AD084DFCFF34B0A5DF8EF /* CGRect+Rounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AD784CF5FA5B1EEA220F6 /* CGRect+Rounding.swift */; };
 		931AD0A10D858BA718BA9008 /* PointRoundingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AD53D958DE27768A0A8C7 /* PointRoundingSpec.swift */; };
@@ -171,6 +174,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DF97C8C2075489B00D2A21B /* Foundation.framework in Frameworks */,
+				1DF97C8B2075489300D2A21B /* CoreGraphics.framework in Frameworks */,
+				1DF97C8A2075488B00D2A21B /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
