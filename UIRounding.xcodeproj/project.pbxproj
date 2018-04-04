@@ -44,6 +44,7 @@
 		931AD206DBAFA138A21372B4 /* ScreenRounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AD38B163CE5C219B0972E /* ScreenRounding.swift */; };
 		931AD343E382C9BCEBAD3AC3 /* UIRoundingScaleSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931ADE81545B8C0911210229 /* UIRoundingScaleSpec.swift */; };
 		931AD344BEB483C2AA2491DA /* WKInterfaceDevice+ScaleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931ADC8225B32487C7A0318F /* WKInterfaceDevice+ScaleProvider.swift */; };
+		931AD42057598073F1510592 /* SizeRoundingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931ADD408311FB159424ECD0 /* SizeRoundingSpec.swift */; };
 		931AD43CFEE6AC8F133B4C30 /* CGSize+Rounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931ADB50744B7E53A43C01C3 /* CGSize+Rounding.swift */; };
 		931AD458A1FF9940B8D36581 /* CGRect+Rounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AD784CF5FA5B1EEA220F6 /* CGRect+Rounding.swift */; };
 		931AD4DAEFDC21796640EFFA /* ScreenRoundingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AD4AFCCC3DBB8A44299B3 /* ScreenRoundingType.swift */; };
@@ -57,9 +58,11 @@
 		931AD6B4FFD6EC8F50EDC2C8 /* NSScreen+ScaleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AD04AE3190B0B3D68BA85 /* NSScreen+ScaleProvider.swift */; };
 		931AD6FDFEC1F757417EBC2E /* CGSize+Rounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931ADB50744B7E53A43C01C3 /* CGSize+Rounding.swift */; };
 		931AD749A6E76BB3745A1C7A /* ScaleProviderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AD5EBABEA8FB18D126D7A /* ScaleProviderType.swift */; };
+		931AD786857C8B4FC8CA2FEC /* SizeRoundingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931ADD408311FB159424ECD0 /* SizeRoundingSpec.swift */; };
 		931AD789C909397930042C02 /* ScreenRoundingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AD4AFCCC3DBB8A44299B3 /* ScreenRoundingType.swift */; };
 		931AD7F8F93A7A5D548D022A /* ScaleProviderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AD5EBABEA8FB18D126D7A /* ScaleProviderType.swift */; };
 		931AD80955EF06FF882FD1A9 /* ScaleSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931ADBFED1348E7F7A60B55F /* ScaleSource.swift */; };
+		931AD81F8DF9C2772C692136 /* SizeRoundingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931ADD408311FB159424ECD0 /* SizeRoundingSpec.swift */; };
 		931AD8EB325E96F49E87DB5C /* UIRoundingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AD63B43901B73F2B54032 /* UIRoundingSpec.swift */; };
 		931AD91A71DDD8BDC9DEF3E8 /* FixScaleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AD706CEA2FF1B29AC64A2 /* FixScaleProvider.swift */; };
 		931AD95F2D63F4DBD2136715 /* ScaleProviderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AD5EBABEA8FB18D126D7A /* ScaleProviderType.swift */; };
@@ -151,6 +154,7 @@
 		931ADC7278174D62A694A0BF /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = file.yml; path = .travis.yml; sourceTree = "<group>"; };
 		931ADC8225B32487C7A0318F /* WKInterfaceDevice+ScaleProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WKInterfaceDevice+ScaleProvider.swift"; sourceTree = "<group>"; };
 		931ADD2DC3748F32AC849A35 /* CGPoint+Rounding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Rounding.swift"; sourceTree = "<group>"; };
+		931ADD408311FB159424ECD0 /* SizeRoundingSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeRoundingSpec.swift; sourceTree = "<group>"; };
 		931ADD8B9D5636FE20451E49 /* Rounding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rounding.swift; sourceTree = "<group>"; };
 		931ADD8D9216E51AD810A8DA /* ScaleSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleSource.swift; sourceTree = "<group>"; };
 		931ADDD91F4D072F6DACB384 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -383,6 +387,7 @@
 				931ADE81545B8C0911210229 /* UIRoundingScaleSpec.swift */,
 				931AD63B43901B73F2B54032 /* UIRoundingSpec.swift */,
 				931AD53D958DE27768A0A8C7 /* PointRoundingSpec.swift */,
+				931ADD408311FB159424ECD0 /* SizeRoundingSpec.swift */,
 			);
 			path = Common_Tests;
 			sourceTree = "<group>";
@@ -751,6 +756,7 @@
 				931AD343E382C9BCEBAD3AC3 /* UIRoundingScaleSpec.swift in Sources */,
 				931AD64A7E8C4D74095C06CF /* UIRoundingSpec.swift in Sources */,
 				931ADCD152D1F41A78A496B7 /* PointRoundingSpec.swift in Sources */,
+				931AD42057598073F1510592 /* SizeRoundingSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -814,6 +820,7 @@
 			files = (
 				931ADB400CE889DC3866C540 /* UIRoundingSpec.swift in Sources */,
 				931AD0A10D858BA718BA9008 /* PointRoundingSpec.swift in Sources */,
+				931AD786857C8B4FC8CA2FEC /* SizeRoundingSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -823,6 +830,7 @@
 			files = (
 				931AD8EB325E96F49E87DB5C /* UIRoundingSpec.swift in Sources */,
 				931AD5C7677E1A5669A0D995 /* PointRoundingSpec.swift in Sources */,
+				931AD81F8DF9C2772C692136 /* SizeRoundingSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
