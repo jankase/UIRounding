@@ -12,12 +12,12 @@ public class RectScreenRounding: ScreenRounding, ScreenRoundingType {
     let theOriginRoundingRule: FloatingPointRoundingRule
     let theSizeRoundingRule: FloatingPointRoundingRule
     switch aRoundingRule {
-    case .towardZero:
-      theOriginRoundingRule = .awayFromZero
-      theSizeRoundingRule = .towardZero
-    case .awayFromZero:
+    case .up:
       theOriginRoundingRule = .towardZero
       theSizeRoundingRule = .awayFromZero
+    case .down:
+      theOriginRoundingRule = .awayFromZero
+      theSizeRoundingRule = .towardZero
     case .toNearestOrAwayFromZero:
       theOriginRoundingRule = .toNearestOrAwayFromZero
       theSizeRoundingRule = .toNearestOrAwayFromZero

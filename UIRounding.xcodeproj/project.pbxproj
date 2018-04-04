@@ -40,8 +40,10 @@
 		931AD027FA44782D932033BC /* ScreenRoundingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AD4AFCCC3DBB8A44299B3 /* ScreenRoundingType.swift */; };
 		931AD084DFCFF34B0A5DF8EF /* CGRect+Rounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AD784CF5FA5B1EEA220F6 /* CGRect+Rounding.swift */; };
 		931AD0A10D858BA718BA9008 /* PointRoundingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AD53D958DE27768A0A8C7 /* PointRoundingSpec.swift */; };
+		931AD11C2BE5B1A13B4093E9 /* RectRoundingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931ADF1B2C2026F37B66A978 /* RectRoundingSpec.swift */; };
 		931AD19D9CAFE00F611F2C6C /* ScaleSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AD390DD83A388D90BAD5F /* ScaleSource.swift */; };
 		931AD206DBAFA138A21372B4 /* ScreenRounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AD38B163CE5C219B0972E /* ScreenRounding.swift */; };
+		931AD26717F409FA104C29E2 /* RectRoundingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931ADF1B2C2026F37B66A978 /* RectRoundingSpec.swift */; };
 		931AD343E382C9BCEBAD3AC3 /* UIRoundingScaleSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931ADE81545B8C0911210229 /* UIRoundingScaleSpec.swift */; };
 		931AD344BEB483C2AA2491DA /* WKInterfaceDevice+ScaleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931ADC8225B32487C7A0318F /* WKInterfaceDevice+ScaleProvider.swift */; };
 		931AD42057598073F1510592 /* SizeRoundingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931ADD408311FB159424ECD0 /* SizeRoundingSpec.swift */; };
@@ -78,6 +80,7 @@
 		931ADD9EBBF749F0C78C5617 /* ScreenRoundableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931ADFBA051B24339EDEACCE /* ScreenRoundableType.swift */; };
 		931ADE5E0E1AC1646C377186 /* ScreenRoundingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AD4AFCCC3DBB8A44299B3 /* ScreenRoundingType.swift */; };
 		931ADE71D593F19E80A7FBC1 /* FixScaleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AD706CEA2FF1B29AC64A2 /* FixScaleProvider.swift */; };
+		931ADE78C0177E71E2B43433 /* RectRoundingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931ADF1B2C2026F37B66A978 /* RectRoundingSpec.swift */; };
 		931ADEA3E145E0BC9B8DF535 /* ScreenRounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931AD38B163CE5C219B0972E /* ScreenRounding.swift */; };
 		931ADED1399915CD7582469B /* ScreenRoundableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931ADFBA051B24339EDEACCE /* ScreenRoundableType.swift */; };
 		931ADF3D651254B75328053F /* CGPoint+Rounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931ADD2DC3748F32AC849A35 /* CGPoint+Rounding.swift */; };
@@ -159,6 +162,7 @@
 		931ADD8D9216E51AD810A8DA /* ScaleSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleSource.swift; sourceTree = "<group>"; };
 		931ADDD91F4D072F6DACB384 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		931ADE81545B8C0911210229 /* UIRoundingScaleSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIRoundingScaleSpec.swift; sourceTree = "<group>"; };
+		931ADF1B2C2026F37B66A978 /* RectRoundingSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectRoundingSpec.swift; sourceTree = "<group>"; };
 		931ADFBA051B24339EDEACCE /* ScreenRoundableType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenRoundableType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -388,6 +392,7 @@
 				931AD63B43901B73F2B54032 /* UIRoundingSpec.swift */,
 				931AD53D958DE27768A0A8C7 /* PointRoundingSpec.swift */,
 				931ADD408311FB159424ECD0 /* SizeRoundingSpec.swift */,
+				931ADF1B2C2026F37B66A978 /* RectRoundingSpec.swift */,
 			);
 			path = Common_Tests;
 			sourceTree = "<group>";
@@ -757,6 +762,7 @@
 				931AD64A7E8C4D74095C06CF /* UIRoundingSpec.swift in Sources */,
 				931ADCD152D1F41A78A496B7 /* PointRoundingSpec.swift in Sources */,
 				931AD42057598073F1510592 /* SizeRoundingSpec.swift in Sources */,
+				931AD11C2BE5B1A13B4093E9 /* RectRoundingSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -821,6 +827,7 @@
 				931ADB400CE889DC3866C540 /* UIRoundingSpec.swift in Sources */,
 				931AD0A10D858BA718BA9008 /* PointRoundingSpec.swift in Sources */,
 				931AD786857C8B4FC8CA2FEC /* SizeRoundingSpec.swift in Sources */,
+				931ADE78C0177E71E2B43433 /* RectRoundingSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -831,6 +838,7 @@
 				931AD8EB325E96F49E87DB5C /* UIRoundingSpec.swift in Sources */,
 				931AD5C7677E1A5669A0D995 /* PointRoundingSpec.swift in Sources */,
 				931AD81F8DF9C2772C692136 /* SizeRoundingSpec.swift in Sources */,
+				931AD26717F409FA104C29E2 /* RectRoundingSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
