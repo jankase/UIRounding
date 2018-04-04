@@ -44,7 +44,6 @@ class RectRoundingSpec: QuickSpec {
                  floorResult: CGRect(x: -0.3333, y: -0.3333, width: -2, height: -2))
   ]
 
-
   private func _test(spec aSpec: RoundingSpec<CGRect>) {
     let theScaleProvider = FixScaleProvider(scale: 3)
     context("Performing operation on \(aSpec.inputValue)") {
