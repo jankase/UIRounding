@@ -6,6 +6,10 @@
 import Foundation
 import CoreGraphics
 
+/// Type able to provide scale
 public protocol ScaleProviderType {
+
+  /// scale used for rounding
   var scale: CGFloat { get }
+
 }
