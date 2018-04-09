@@ -11,6 +11,9 @@ public struct RoundingHelper<T: FloatingPoint> {
   /// standard scale used for rounding
   public var scale: T = 1
 
+  /// value multiplier used during rounding
+  public var multiplier: T = 1
+
   /**
 
   Default constructor
@@ -70,7 +73,7 @@ public struct RoundingHelper<T: FloatingPoint> {
 
   */
   public func transform(value aSource: T, byRule aRule: FloatingPointRoundingRule) -> T {
-    return (aSource * scale).rounded(aRule) / scale
+    return (aSource * scale * multiplier).rounded(aRule) / scale
   }
 
 }

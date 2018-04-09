@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "UIRounding"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "Simple helper for perform pixel perfect rounding of CoreGraphics elements"
 
   # This description is used to generate tags and improve search results.
