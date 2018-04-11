@@ -43,7 +43,7 @@ extension ScreenRoundableType where Rounder.Value == Self {
     - returns: Rounded version of self
 
   */
-  public func rounded(scaleProvider aProvider: ScaleProviderType) -> Self {
+  public func rounded(scaleProvider aProvider: ScaleProviderType = ScaleSource.default) -> Self {
     return Self.screenRounding(scaleProvider: aProvider).round(value: self)
   }
 
@@ -54,7 +54,7 @@ extension ScreenRoundableType where Rounder.Value == Self {
   - returns: Ceiled version of self
 
   */
-  public func ceiled(scaleProvider aProvider: ScaleProviderType) -> Self {
+  public func ceiled(scaleProvider aProvider: ScaleProviderType = ScaleSource.default) -> Self {
     return Self.screenRounding(scaleProvider: aProvider).ceil(value: self)
   }
 
@@ -65,7 +65,7 @@ extension ScreenRoundableType where Rounder.Value == Self {
   - returns: Floored version of self
 
   */
-  public func floored(scaleProvider aProvider: ScaleProviderType) -> Self {
+  public func floored(scaleProvider aProvider: ScaleProviderType = ScaleSource.default) -> Self {
     return Self.screenRounding(scaleProvider: aProvider).floor(value: self)
   }
 
@@ -76,7 +76,7 @@ extension ScreenRoundableType where Rounder.Value == Self {
   - parameter scaleProvider: provides information about scale used for rounding. Typically reference to screen scale.
 
   */
-  public mutating func round(scaleProvider aProvider: ScaleProviderType) {
+  public mutating func round(scaleProvider aProvider: ScaleProviderType = ScaleSource.default) {
     self = rounded(scaleProvider: aProvider)
   }
 
@@ -87,7 +87,7 @@ extension ScreenRoundableType where Rounder.Value == Self {
   - parameter scaleProvider: provides information about scale used for rounding. Typically reference to screen scale.
 
   */
-  public mutating func ceil(scaleProvider aProvider: ScaleProviderType) {
+  public mutating func ceil(scaleProvider aProvider: ScaleProviderType = ScaleSource.default) {
     self = ceiled(scaleProvider: aProvider)
   }
 
@@ -98,7 +98,7 @@ extension ScreenRoundableType where Rounder.Value == Self {
   - parameter scaleProvider: provides information about scale used for rounding. Typically reference to screen scale.
 
   */
-  public mutating func floor(scaleProvider aProvider: ScaleProviderType) {
+  public mutating func floor(scaleProvider aProvider: ScaleProviderType = ScaleSource.default) {
     self = floored(scaleProvider: aProvider)
   }
 
