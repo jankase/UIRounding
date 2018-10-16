@@ -15,9 +15,9 @@ before_script:
 script:
   - set -o pipefail
   - xcodebuild clean
-  - xcodebuild build -project $PROJECT_NAME -scheme $SCHEME_NAME -destination "$DESTINATION" ENABLE_TESTABILITY=YES CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=YES | xcpretty
+  - xcodebuild build -workspace $PROJECT_NAME -scheme $SCHEME_NAME -destination "$DESTINATION" ENABLE_TESTABILITY=YES CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=YES | xcpretty
   - if [ $TESTING == "YES" ]; then
-      xcodebuild test -project $PROJECT_NAME -scheme $SCHEME_NAME -destination "$DESTINATION" ENABLE_TESTABILITY=YES CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=YES | xcpretty;
+      xcodebuild test -worskpace $PROJECT_NAME -scheme $SCHEME_NAME -destination "$DESTINATION" ENABLE_TESTABILITY=YES CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=YES | xcpretty;
     fi
   - if [ $COVERAGE == "YES" ]; then
       slather coverage -x -t --scheme $SCHEME_NAME $PROJECT_NAME;
