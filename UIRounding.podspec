@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "UIRounding"
-  s.version      = "0.0.2"
+  s.version      = "0.0.4"
   s.summary      = "Simple helper for perform pixel perfect rounding of CoreGraphics elements"
 
   # This description is used to generate tags and improve search results.
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.author             = { "Jan Kase" => "jan.kase@me.com" }
 
   s.ios.deployment_target     = "8.0"
-  s.osx.deployment_target     = "10.11"
+  s.osx.deployment_target     = "10.10"
   s.watchos.deployment_target = "2.0"
   s.tvos.deployment_target    = "9.0"
 
