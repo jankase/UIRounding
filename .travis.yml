@@ -2,6 +2,8 @@ language: swift
 osx_image: xcode10
 before_install:
 - brew outdated swiftlint || brew upgrade swiftlint
+- gem update cocoapods
+- pod repo update
 before_script:
 - rm -rf ~/Library/Developer/Xcode/DerivedData
 - if [ $COVERAGE == "YES" ]; then
