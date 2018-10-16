@@ -2,7 +2,7 @@ language: swift
 osx_image: xcode10
 before_install:
 - brew outdated swiftlint || brew upgrade swiftlint
-- gem update cocoapods
+- gem install cocoapods --pre
 - pod repo update
 before_script:
 - rm -rf ~/Library/Developer/Xcode/DerivedData
