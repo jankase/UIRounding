@@ -1,16 +1,9 @@
 language: swift
-osx_image: xcode9.3
-cache:
-  directories:
-  - Carthage
+osx_image: xcode10
 before_install:
-- brew outdated carthage || brew upgrade carthage
 - brew outdated swiftlint || brew upgrade swiftlint
 before_script:
 - rm -rf ~/Library/Developer/Xcode/DerivedData
-- if [ $CARTHAGE_PLATFORM != "watchos" ]; then
-    carthage bootstrap --no-use-binaries --cache-builds --platform $CARTHAGE_PLATFORM ;
-  fi
 - if [ $COVERAGE == "YES" ]; then
     gem install slather;
     curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-darwin-amd64 > ./cc-test-reporter;
