@@ -17,8 +17,8 @@ script:
   - xcodebuild clean
   - xcodebuild build -workspace $PROJECT_NAME -scheme $SCHEME_NAME -destination "$DESTINATION" ENABLE_TESTABILITY=YES CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=YES | xcpretty
   - if [ $TESTING == "YES" ]; then
-      sleep 10;
       xcodebuild test -workspace $PROJECT_NAME -scheme $SCHEME_NAME -destination "$DESTINATION" ENABLE_TESTABILITY=YES CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=YES | xcpretty;
+      sleep 20;
     fi
   - if [ $COVERAGE == "YES" ]; then
       slather coverage -x -t --scheme $SCHEME_NAME $PROJECT_NAME;
