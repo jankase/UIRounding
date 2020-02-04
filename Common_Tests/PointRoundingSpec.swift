@@ -3,18 +3,18 @@
 // Copyright (c) 2018 Jan Kaše. All rights reserved.
 //
 
-import Foundation
 import CoreGraphics
+import Foundation
 import Nimble
 import Quick
 @testable import UIRounding
 
 class PointRounding: QuickSpec {
-
   override func spec() {
     super.spec()
     describe("Point rounding helper with scale 3") {
-      self._pointSpecs.forEach { self._test(spec: $0) }
+      //swiftlint:disable:next quick_discouraged_call
+      self._pointSpecs.forEach(self._test)
     }
   }
 
@@ -47,6 +47,7 @@ class PointRounding: QuickSpec {
 
   private func _test(spec aSpec: RoundingSpec<CGPoint>) {
     let theScaleProvider = FixScaleProvider(scale: 3)
+    //swiftlint:disable:next implicitly_unwrapped_optional
     var aPoint: CGPoint!
     beforeEach {
       aPoint = aSpec.inputValue
@@ -59,7 +60,7 @@ class PointRounding: QuickSpec {
       aPoint.ceil(scaleProvider: theScaleProvider)
       self._expectClosePoints(aPoint, aSpec.ceilResult)
     }
-    it ("floor \(aSpec.inputValue)") {
+    it("floor \(aSpec.inputValue)") {
       aPoint.floor(scaleProvider: theScaleProvider)
       self._expectClosePoints(aPoint, aSpec.floorResult)
     }
@@ -69,5 +70,4 @@ class PointRounding: QuickSpec {
     expect(aLhs.x).to(beCloseTo(aRhs.x))
     expect(aLhs.y).to(beCloseTo(aRhs.y))
   }
-
 }

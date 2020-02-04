@@ -3,13 +3,9 @@
 // Copyright (c) 2018 Jan Kaše. All rights reserved.
 //
 
-import WatchKit
 import CoreGraphics
+import WatchKit
 
-extension WKInterfaceDevice: ScaleProviderType {
-
-  public var scale: CGFloat {
-    return screenScale
-  }
-
+public extension WKInterfaceDevice: ScaleProviderType {
+  var scale: CGFloat { screenScale }
 }

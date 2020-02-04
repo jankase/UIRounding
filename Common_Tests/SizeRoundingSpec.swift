@@ -3,17 +3,17 @@
 // Copyright (c) 2018 Jan Kaše. All rights reserved.
 //
 
-import Foundation
 import CoreGraphics
-import Quick
+import Foundation
 import Nimble
+import Quick
 @testable import UIRounding
 
 class SizeRoundingSpec: QuickSpec {
-
   override func spec() {
     describe("Size rounding helper with scale 3") {
-      _specs.forEach { self._test(specs: $0) }
+      //swiftlint:disable:next quick_discouraged_call
+      _specs.forEach(self._test)
     }
 
   }
@@ -47,6 +47,7 @@ class SizeRoundingSpec: QuickSpec {
 
   private func _test(specs aSpec: RoundingSpec<CGSize>) {
     let theScaleProvider = FixScaleProvider(scale: 3)
+    //swiftlint:disable:next implicitly_unwrapped_optional
     var aSize: CGSize!
     beforeEach {
       aSize = aSpec.inputValue
@@ -69,5 +70,4 @@ class SizeRoundingSpec: QuickSpec {
     expect(aLhs.width).to(beCloseTo(aRhs.width))
     expect(aRhs.height).to(beCloseTo(aRhs.height))
   }
-
 }

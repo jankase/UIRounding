@@ -7,9 +7,7 @@ import Cocoa
 import CoreGraphics
 
 extension NSScreen: ScaleProviderType {
-
   public var scale: CGFloat {
-    return backingScaleFactor
+    backingScaleFactor
   }
-
 }

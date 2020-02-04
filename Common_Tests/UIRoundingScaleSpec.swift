@@ -6,18 +6,18 @@
 //  Copyright © 2018 Jan Kaše. All rights reserved.
 //
 
-import Foundation
 import CoreGraphics
-import Quick
+import Foundation
 import Nimble
+import Quick
 @testable import UIRounding
 
 class UIRoundingScaleSpec: QuickSpec {
-
   override func spec() {
     describe("RoundingHelper") {
       for theScale in 1...3 {
         context("with scale \(theScale)") {
+          //swiftlint:disable:next quick_discouraged_call
           _test(scale: CGFloat(theScale), specs: _scaleSpecs[theScale - 1])
         }
       }
@@ -70,5 +70,4 @@ class UIRoundingScaleSpec: QuickSpec {
     let theHelper = RoundingHelper(scale: aScale)
     aSpecs.forEach { self._test(roundingHelper: theHelper, specification: $0) }
   }
-
 }

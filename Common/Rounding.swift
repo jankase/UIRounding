@@ -7,7 +7,6 @@ import Foundation
 
 /// Helper providing rounding for floating type values
 public struct RoundingHelper<T: FloatingPoint> {
-
   /// standard scale used for rounding
   public var scale: T = 1
 
@@ -34,7 +33,7 @@ public struct RoundingHelper<T: FloatingPoint> {
 
   */
   public func ceil(value aSource: T) -> T {
-    return transform(value: aSource, byRule: .up)
+    transform(value: aSource, byRule: .up)
   }
 
   /**
@@ -46,7 +45,7 @@ public struct RoundingHelper<T: FloatingPoint> {
 
   */
   public func floor(value aSource: T) -> T {
-    return transform(value: aSource, byRule: .down)
+    transform(value: aSource, byRule: .down)
   }
 
   /**
@@ -58,7 +57,7 @@ public struct RoundingHelper<T: FloatingPoint> {
 
   */
   public func round(value aSource: T) -> T {
-    return transform(value: aSource, byRule: .toNearestOrAwayFromZero)
+    transform(value: aSource, byRule: .toNearestOrAwayFromZero)
   }
 
   /**
@@ -73,7 +72,6 @@ public struct RoundingHelper<T: FloatingPoint> {
 
   */
   public func transform(value aSource: T, byRule aRule: FloatingPointRoundingRule) -> T {
-    return (aSource * scale * multiplier).rounded(aRule) / scale
+    (aSource * scale * multiplier).rounded(aRule) / scale
   }
-
 }
