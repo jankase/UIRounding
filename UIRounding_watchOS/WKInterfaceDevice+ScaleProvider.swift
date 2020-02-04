@@ -6,6 +6,6 @@
 import CoreGraphics
 import WatchKit
 
-public extension WKInterfaceDevice: ScaleProviderType {
-  var scale: CGFloat { screenScale }
+extension WKInterfaceDevice: ScaleProviderType {
+  public var scale: CGFloat { screenScale }
 }
