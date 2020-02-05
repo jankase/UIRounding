@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name = 'UIRounding'
-    s.version = '0.0.9'
+    s.version = '0.1.0'
     s.license = {:type => 'MIT', :file => 'LICENSE'}
     s.homepage = 'https://github.com/jankase/UIRounding'
     s.author = { 'Jan Kase' => 'jan.kase@jkdev.eu' }
