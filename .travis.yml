@@ -22,7 +22,7 @@ script:
       sleep 20;
     fi
   - if [ $COVERAGE == "YES" ]; then
-      slather coverage -x -t --scheme $SCHEME_NAME $WORKSPACE_NAME $PROJECT_NAME;
+      slather coverage -x -t --scheme $SCHEME_NAME --workspace $WORKSPACE_NAME $PROJECT_NAME;
     fi
 after_script:
   - if [ $COVERAGE == "YES" ]; then
