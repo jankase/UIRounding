@@ -3,17 +3,17 @@
 // Copyright (c) 2018 Jan Kaše. All rights reserved.
 //
 
-import Foundation
 import CoreGraphics
+import Foundation
 import Nimble
 import Quick
 @testable import UIRounding
 
 class RectRoundingSpec: QuickSpec {
-
   override func spec() {
     describe("Rectangle rounding with scale 3") {
-      self._specs.forEach { self._test(spec: $0) }
+      //swiftlint:disable:next quick_discouraged_call
+      self._specs.forEach(self._test)
     }
   }
 
@@ -47,6 +47,7 @@ class RectRoundingSpec: QuickSpec {
   private func _test(spec aSpec: RoundingSpec<CGRect>) {
     let theScaleProvider = FixScaleProvider(scale: 3)
     context("Performing operation on \(aSpec.inputValue)") {
+      //swiftlint:disable:next implicitly_unwrapped_optional
       var theRect: CGRect!
       beforeEach {
         theRect = aSpec.inputValue
@@ -73,5 +74,4 @@ class RectRoundingSpec: QuickSpec {
     expect(aLhs.width).to(beCloseTo(aRhs.width))
     expect(aLhs.height).to(beCloseTo(aRhs.height))
   }
-
 }

@@ -3,13 +3,11 @@
 // Copyright (c) 2018 Jan Kaše. All rights reserved.
 //
 
-import Foundation
 import CoreGraphics
+import Foundation
 
 /// Type able to provide scale
 public protocol ScaleProviderType {
-
   /// scale used for rounding
   var scale: CGFloat { get }
-
 }

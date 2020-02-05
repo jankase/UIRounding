@@ -6,7 +6,5 @@
 import Cocoa
 
 public struct ScaleSource {
-
   public static var `default`: ScaleProviderType = NSScreen.main ?? FixScaleProvider(scale: 1)
-
 }

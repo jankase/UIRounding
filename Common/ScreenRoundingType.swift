@@ -7,7 +7,6 @@ import Foundation
 
 /// Standard rounding operation
 public protocol ScreenRoundingType {
-
   /// Type used for rounding operations
   associatedtype Value
 
@@ -22,11 +21,9 @@ public protocol ScreenRoundingType {
 
   */
   func transform(value aValue: Value, by aRoundingRule: FloatingPointRoundingRule) -> Value
-
 }
 
-extension ScreenRoundingType {
-
+public extension ScreenRoundingType {
   /**
   Default rounding operation.
 
@@ -34,8 +31,8 @@ extension ScreenRoundingType {
   - Returns: Rounded value
 
   */
-  public func round(value aValue: Value) -> Value {
-    return transform(value: aValue, by: .toNearestOrAwayFromZero)
+  func round(value aValue: Value) -> Value {
+    transform(value: aValue, by: .toNearestOrAwayFromZero)
   }
 
   /**
@@ -45,8 +42,8 @@ extension ScreenRoundingType {
   - Returns: Ceiled value
 
   */
-  public func ceil(value aValue: Value) -> Value {
-    return transform(value: aValue, by: .up)
+  func ceil(value aValue: Value) -> Value {
+    transform(value: aValue, by: .up)
   }
 
   /**
@@ -56,8 +53,7 @@ extension ScreenRoundingType {
   - Returns: Floored value
 
   */
-  public func floor(value aValue: Value) -> Value {
-    return transform(value: aValue, by: .down)
+  func floor(value aValue: Value) -> Value {
+    transform(value: aValue, by: .down)
   }
-
 }

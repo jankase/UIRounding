@@ -6,7 +6,5 @@
 import WatchKit
 
 public struct ScaleSource {
-
   public static var `default`: ScaleProviderType = WKInterfaceDevice.current()
-
 }

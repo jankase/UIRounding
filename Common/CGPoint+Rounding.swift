@@ -3,21 +3,18 @@
 // Copyright (c) 2018 Jan Kaše. All rights reserved.
 //
 
-import Foundation
 import CoreGraphics
+import Foundation
 
 public class PointScreenRounding: ScreenRounding, ScreenRoundingType {
-
   public func transform(value aValue: CGPoint, by aRoundingRule: FloatingPointRoundingRule) -> CGPoint {
-    return CGPoint(x: roundingHelper.transform(value: aValue.x, byRule: aRoundingRule),
-                   y: roundingHelper.transform(value: aValue.y, byRule: aRoundingRule))
+    CGPoint(x: roundingHelper.transform(value: aValue.x, byRule: aRoundingRule),
+            y: roundingHelper.transform(value: aValue.y, byRule: aRoundingRule))
   }
 }
 
 extension CGPoint: ScreenRoundableType {
-
   public static func screenRounding(scaleProvider aScaleProvider: ScaleProviderType) -> PointScreenRounding {
-    return PointScreenRounding(scaleProvider: aScaleProvider)
+    PointScreenRounding(scaleProvider: aScaleProvider)
   }
-
 }

@@ -3,11 +3,10 @@
 // Copyright (c) 2018 Jan Kaše. All rights reserved.
 //
 
-import Foundation
 import CoreGraphics
+import Foundation
 
 public class RectScreenRounding: ScreenRounding, ScreenRoundingType {
-
   public func transform(value aValue: CGRect, by aRoundingRule: FloatingPointRoundingRule) -> CGRect {
     let theOriginRoundingRule: FloatingPointRoundingRule
     let theSizeRoundingRule: FloatingPointRoundingRule
@@ -21,20 +20,18 @@ public class RectScreenRounding: ScreenRounding, ScreenRoundingType {
     case .toNearestOrAwayFromZero:
       theOriginRoundingRule = .toNearestOrAwayFromZero
       theSizeRoundingRule = .toNearestOrAwayFromZero
-    default: fatalError()
+    default:
+      fatalError("Unsupported rounding method")
     }
     return CGRect(origin: CGPoint.screenRounding(scaleProvider: scaleProvider).transform(value: aValue.origin,
                                                                                          by: theOriginRoundingRule),
                   size: CGSize.screenRounding(scaleProvider: scaleProvider).transform(value: aValue.size,
                                                                                       by: theSizeRoundingRule))
   }
-
 }
 
 extension CGRect: ScreenRoundableType {
-
   public static func screenRounding(scaleProvider aScaleProvider: ScaleProviderType) -> RectScreenRounding {
-    return RectScreenRounding(scaleProvider: aScaleProvider)
+    RectScreenRounding(scaleProvider: aScaleProvider)
   }
-
 }
